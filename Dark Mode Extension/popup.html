@@ -1,143 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster:400|Raleway:300,400,500&display=swap" rel="stylesheet">
-
 </head>
 <style>
-    .popup {
-        min-width: 344px;
-        min-height: 188px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-        font-family: "Lobster";
+    body{
+        min-width: 300px;
         text-align: center;
+    }
+    h1{
+        font-family: 'Dancing Script', cursive;
+    }
+    .yellow{
+        color: yellow;
+    }
+    .blue{
+        color: blue;
+    }
+    p, .button{
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+    }
+    .button{
+        background-color:rgb(114, 185, 233);
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height:2rem;
+        width:5rem;
+        border-radius:1rem;
+        cursor: pointer;
 
     }
-
-    .yellow {
-        color: #FBE36D;
-    }
-
-    .blue {
-        color: #588BE4;
-    }
-
-    p {
-        font-family: "Raleway", sans-serif;
-        font-size: 0.75rem;
-    }
-
-    .button {
-        background-color: #FDFCA3;
-        position: relative;
-        height: 2rem;
-        width: 4rem;
-        border-radius: 25px;
-        transition: 1s;
-        font-family: "Raleway", sans-serif;
-    }
-
-    .half {
-        position: absolute;
-        width: 50%;
-        top: 50%;
-        transform: translateY(-50%);
+    .row{
+        padding: 0 0.25rem;
         pointer-events: none;
     }
-
-    .circle {
-        position: absolute;
+    .circle{
+        position:absolute;
         top: 0;
         left: 0;
-        height: 32px;
-        width: 32px;
+        height: 2rem;
+        width: 2rem;
         border-radius: 50%;
-        background-color: rgb(255, 213, 0);
+        background-color:blue;
         pointer-events: none;
-        transition: 1s;
-
     }
-
-    @keyframes transformToBlue {
-        0% {
-            background-color: #FDFCA3;
-        }
-
-        100% {
-            background-color: #8ABFF0;
-        }
-    }
-
-    @keyframes transformToYellow {
-        0% {
-            background-color: #8ABFF0;
-        }
-
-        100% {
-            background-color: #FDFCA3;
-        }
-    }
-
     @keyframes moveCircleRight {
-        0% {
+        from{
             left: 0;
-            transform: translateX(0);
-            background-color: rgb(255, 213, 0);
-        }
+            background-color:blue;
 
-        100% {
+        }
+        to{
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color:#FBE36d;
         }
     }
-
     @keyframes moveCircleLeft {
-        0% {
+        from{
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color:#FBE36d;
         }
-
-        100% {
+        to{
             left: 0;
-            transform: translateX(0);
-            background-color: rgb(255, 213, 0);
+            background-color:blue;
         }
+    }
+    @keyframes backgroundYellow {
+        from{
+            background-color:rgb(114, 185, 233)
+        }
+        to{
+            background-color:#FDFCA3;
+        }
+        
+    }
+    @keyframes backgroundBlue {
+        from{
+            background-color:#FDFCA3;
+        }
+        to{
+            background-color:rgb(114, 185, 233)
+        }
+        
     }
 </style>
-
-<body>
-    <div class="popup">
-        <h1> <span class="yellow">Invert</span><span class="blue">.IO</span></h1>
-        <p>
-            Bored of looking at websites the same way?
-            Meet Invert.io, a chrome extension that can change your website from dark mood to light mode and vice versa!
-            :)
-        </p>
-
-        <div class="button">
-            <div class="half" style="left: 5px;">On</div>
-            <div class="half" style="right: 5px; text-align: right;">Off</div>
-            <div class="circle"></div>
-        </div>
+<body class="popup">
+    <h1>
+        <span class="yellow">Dark</span><span class="blue">Lit</span>   
+    </h1>
+    <p>Switch Between Dark and Light themes easily with DarkLit !</p>
+    <div class="button">
+        <div class="row">On</div>
+        <div class="row">Off</div>
+        <div class="circle"></div>
     </div>
-
-    <script src="./popup.js">
-    </script>
-
 </body>
-
+<script src="./popup.js"></script>
 </html>
