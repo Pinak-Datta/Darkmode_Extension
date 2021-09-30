@@ -1,0 +1,24 @@
+{
+    "name": "Darklit",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": " Meet Darklit, an extension that can change your website from dark mode to light mode and vice versa! :) ",
+    "background": {
+        "scripts": [
+            "popup.js"
+        ],
+        "persisten": true
+    },
+    "icons":{
+        "128":"logo.png"
+    },
+    "browser_action": {
+        "default_title": "Darklit",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}
