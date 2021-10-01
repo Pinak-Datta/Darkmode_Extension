@@ -1,7 +1,7 @@
 # Darkmode_Extension
 An Extension that switches between light and dark modes
 
-The extension is named "DarkLit". The main purpose of it is to switch between dark and light themes.
+The main purpose of "DarkLit" is to switch between dark and light themes.
 
 In the manifest.json, you will find, the script that runs, is the popup.js. It contains all the functionality of the popup.
 
