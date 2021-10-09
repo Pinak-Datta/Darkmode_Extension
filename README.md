@@ -11,3 +11,6 @@ The popup.js uses two components , appOn, and appOff, to handle the cases of The
 
 It is still under the development phase. So some glitches might still persist. 
 Any kind of contribution is heartily welcome. :)
+
+
+Direct Download Link : https://drive.google.com/uc?export=download&id=1Sixp4jWR841Sg30BmXLnXim7yAJiPraR
