@@ -8,15 +8,15 @@ if (document.querySelector(".popup")) {
             button.style.animation = "backgroundYellow 0.5s forwards";
             circle.style.animation = "moveCircleRight 0.5s forwards";
             chrome.tabs.executeScript({
-                file: 'appOn.js'
+                file: 'js/appOn.js'
             })
         }
         else {
             buttonOn = false;
-            button.style.animation = "backgroundBlue 0.5s forwards";
+            button.style.animation = "backgroundOlive 0.5s forwards";
             circle.style.animation = "moveCircleLeft 0.5s forwards";
             chrome.tabs.executeScript({
-                file: 'appOff.js'
+                file: 'js/appOff.js'
             })
         }
     })
