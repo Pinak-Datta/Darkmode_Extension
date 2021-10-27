@@ -1,16 +1,12 @@
-# Darkmode_Extension
-An Extension that switches between light and dark modes
+# DarkLit
 
-The main purpose of "DarkLit" is to switch between dark and light themes.
+- An extension that switches between light and dark modes. The main intention of `DarkLit` is to switch between dark and light themes. In the manifest.json, you will find an instance of an extension called popup.js, which contains all the functionality of the extension.
 
-In the manifest.json, you will find, the script that runs, is the popup.js. It contains all the functionality of the popup.
+- The color schemes and styling of the extension are controlled by HTML and CSS.
 
-Styling and colours of the extension is done with the help of HTML and CSS.
+- Two components: `appOn` and `appOff`, are used to handle cases when The Dark Mode is on or off in the popup.js.
 
-The popup.js uses two components , appOn, and appOff, to handle the cases of The Dark Mode to be on or off.
-
-It is still under the development phase. So some glitches might still persist. 
-Any kind of contribution is heartily welcome. :)
+- *Note: There may be some glitches while the project is under development. Your contributions would be greatly appreciated* :)
 
 
-Direct Download Link : https://drive.google.com/uc?export=download&id=1Sixp4jWR841Sg30BmXLnXim7yAJiPraR
+*Direct Download Link To Project Files:* [ CLICK HERE ](https://drive.google.com/uc?export=download&id=1Sixp4jWR841Sg30BmXLnXim7yAJiPraR)
