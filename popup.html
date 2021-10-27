@@ -5,28 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
     body{
         min-width: 300px;
         text-align: center;
+        background-color: #885A89;
+        border-radius: 50%
     }
     h1{
-        font-family: 'Dancing Script', cursive;
+        /* font-family: 'Oswald', sans-serif; */
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
     }
-    .yellow{
-        color: yellow;
+    .offwhite{
+        color: #f7ede2;
     }
-    .blue{
-        color: blue;
+    .orange{
+        color: #EE7B30;
     }
     p, .button{
-        font-family: 'Lato', sans-serif;
-        font-size: 1rem;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.3rem;
+        color: #f7ede2;
+        font-weight: 300;
     }
     .button{
-        background-color:rgb(114, 185, 233);
+        background-color:#CBCBD4;
         position:relative;
         display: flex;
         flex-direction: row;
@@ -38,9 +51,17 @@
         cursor: pointer;
 
     }
-    .row{
-        padding: 0 0.25rem;
+    .row-off{
+        margin-right: 6px;
+        margin-bottom: 3px;
         pointer-events: none;
+        color: rgba(0, 0, 0, 0.735);
+    }
+    .row-on{
+        margin-left: 6px;
+        margin-bottom: 3px;
+        pointer-events: none;
+        color: rgba(0, 0, 0, 0.735);
     }
     .circle{
         position:absolute;
@@ -49,13 +70,13 @@
         height: 2rem;
         width: 2rem;
         border-radius: 50%;
-        background-color:blue;
+        background-color:#8AA8A1;
         pointer-events: none;
     }
     @keyframes moveCircleRight {
         from{
             left: 0;
-            background-color:blue;
+            background-color:#8AA8A1;
 
         }
         to{
@@ -72,12 +93,12 @@
         }
         to{
             left: 0;
-            background-color:blue;
+            background-color:#8AA8A1;
         }
     }
     @keyframes backgroundYellow {
         from{
-            background-color:rgb(114, 185, 233)
+            background-color:#CBCBD4;
         }
         to{
             background-color:#FDFCA3;
@@ -89,25 +110,25 @@
             background-color:#FDFCA3;
         }
         to{
-            background-color:rgb(114, 185, 233)
+            background-color:#CBCBD4;
         }
         
     }
 </style>
 <body class="popup">
     <h1>
-        <span class="yellow">Dark</span><span class="blue">Lit</span>   
+        <span class="offwhite">Dark</span><span class="orange">Lit</span>   
     </h1>
-    <p>Switch Between Dark and Light themes easily with DarkLit !</p>
+    <p>Easy Switch Between Dark and Light Theme</p>
     <div class="button">
-        <div class="row">On</div>
-        <div class="row">Off</div>
+        <div class="row-on">On</div>
+        <div class="row-off">Off</div>
         <div class="circle"></div>
     </div>
     <hr/>
-    <p style="font-size:10px">Developed By Pinak Datta</p>
+    <p style="font-size:20px">Developed By Pinak Datta</p>
     <a href="https://www.buymeacoffee.com/pinakdatta" target="blank">
-    <img src="Coffeelink.jpg"  width="60" height="60" ></img>
+    <img src="coffeelogo.png"  width="130" height="40" >
     </a>
 </body>
 <script src="./popup.js"></script>
