@@ -4,117 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DarkLit</title>
 </head>
-<style>
-    body{
-        min-width: 300px;
-        text-align: center;
-        background-color: #885A89;
-        border-radius: 50%
-    }
-    h1{
-        /* font-family: 'Oswald', sans-serif; */
-        font-family: 'Rubik', sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .offwhite{
-        color: #f7ede2;
-    }
-    .orange{
-        color: #EE7B30;
-    }
-    p, .button{
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.3rem;
-        color: #f7ede2;
-        font-weight: 300;
-    }
-    .button{
-        background-color:#CBCBD4;
-        position:relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height:2rem;
-        width:5rem;
-        border-radius:1rem;
-        cursor: pointer;
-
-    }
-    .row-off{
-        margin-right: 6px;
-        margin-bottom: 3px;
-        pointer-events: none;
-        color: rgba(0, 0, 0, 0.735);
-    }
-    .row-on{
-        margin-left: 6px;
-        margin-bottom: 3px;
-        pointer-events: none;
-        color: rgba(0, 0, 0, 0.735);
-    }
-    .circle{
-        position:absolute;
-        top: 0;
-        left: 0;
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
-        background-color:#8AA8A1;
-        pointer-events: none;
-    }
-    @keyframes moveCircleRight {
-        from{
-            left: 0;
-            background-color:#8AA8A1;
-
-        }
-        to{
-            left: 100%;
-            transform: translateX(-100%);
-            background-color:#FBE36d;
-        }
-    }
-    @keyframes moveCircleLeft {
-        from{
-            left: 100%;
-            transform: translateX(-100%);
-            background-color:#FBE36d;
-        }
-        to{
-            left: 0;
-            background-color:#8AA8A1;
-        }
-    }
-    @keyframes backgroundYellow {
-        from{
-            background-color:#CBCBD4;
-        }
-        to{
-            background-color:#FDFCA3;
-        }
-        
-    }
-    @keyframes backgroundBlue {
-        from{
-            background-color:#FDFCA3;
-        }
-        to{
-            background-color:#CBCBD4;
-        }
-        
-    }
-</style>
 <body class="popup">
     <h1>
         <span class="offwhite">Dark</span><span class="orange">Lit</span>   
@@ -128,8 +26,8 @@
     <hr/>
     <p style="font-size:20px">Developed By Pinak Datta</p>
     <a href="https://www.buymeacoffee.com/pinakdatta" target="blank">
-    <img src="coffeelogo.png"  width="130" height="40" >
+    <img src="resources/coffeelogo.png"  width="130" height="40" >
     </a>
 </body>
-<script src="./popup.js"></script>
+<script src="js/popup.js"></script>
 </html>
