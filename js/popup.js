@@ -20,5 +20,4 @@ if (document.querySelector(".popup")) {
             })
         }
     })
-
 }
